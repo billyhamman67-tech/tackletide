@@ -1,0 +1,80 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+:root {
+  --background: #f4f3ee;
+  --foreground: #162a2b;
+  --navy: #102d33;
+  --teal: #176b67;
+  --sea: #dce9e2;
+  --sand: #e7d7b9;
+  --line: #d9ded8;
+  --muted: #6b7a76;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: "Aptos", "Segoe UI", sans-serif;
+  --font-mono: "Cascadia Code", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Aptos", "Segoe UI", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.display-font {
+  font-family: Georgia, "Times New Roman", serif;
+  letter-spacing: 0;
+}
+
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+  background: #d8e4df;
+  font-family: inherit;
+}
+
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  background: #fffefa;
+}
+
+.leaflet-control-attribution {
+  font-size: 9px !important;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .fade-in {
+    animation: appear 420ms ease-out both;
+  }
+
+  @keyframes appear {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+}

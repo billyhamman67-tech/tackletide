@@ -1,0 +1,7 @@
+import { ExternalLink } from "lucide-react";
+import { ShopSearch } from "@/components/shop-search";
+import { TackleShopDirectory } from "@/components/tackle-shop-directory";
+
+export default function TackleShopsPage() {
+  return <div className="mx-auto max-w-6xl px-4 py-8 md:px-8 md:py-12"><p className="text-[11px] font-semibold uppercase tracking-[.14em] text-[#74837e]">Local discovery</p><h1 className="display-font mt-1 text-4xl">Isle of Wight tackle shops</h1><p className="mt-3 max-w-2xl text-sm leading-6 text-[#63736e]">These addresses come from a third-party tackle directory that says its listings are unverified. Check that a shop is still operating and confirm details before travelling. Opening hours, bait stock and phone numbers are not asserted here.</p><TackleShopDirectory /><section className="mt-6 rounded-xl border border-[#d9ded8] bg-[#fffefa] p-5"><h2 className="display-font text-2xl">Search other locations</h2><p className="mt-2 text-sm text-[#687972]">Search OpenStreetMap for additional tackle shops near a town or postcode.</p><ShopSearch /><a href="https://www.openstreetmap.org/" target="_blank" rel="noreferrer" className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-[#176b67] underline underline-offset-2">OpenStreetMap <ExternalLink size={14} /></a></section><p className="mt-4 text-xs leading-5 text-[#77847f]">Directory source: Fish-UK Isle of Wight tackle listings. Entries and addresses are not confirmed by this app; please report corrections before treating them as current.</p></div>;
+}

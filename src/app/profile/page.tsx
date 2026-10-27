@@ -1,0 +1,6 @@
+import { Bookmark, ShieldCheck } from "lucide-react";
+import Link from "next/link";
+
+export default function ProfilePage() {
+  return <div className="mx-auto max-w-5xl px-4 py-8 md:px-8 md:py-12"><p className="text-[11px] font-semibold uppercase tracking-[.14em] text-[#74837e]">Profile & settings</p><h1 className="display-font mt-1 text-4xl">Your fishing companion</h1><p className="mt-3 max-w-2xl text-sm leading-6 text-[#63736e]">Guest browsing is enabled. Supabase authentication and account-backed sync have not been configured.</p><div className="mt-6 grid gap-3 md:grid-cols-2"><Link href="/saved" className="rounded-xl border border-[#d9ded8] bg-[#fffefa] p-5"><Bookmark size={18} className="text-[#176b67]" /><h2 className="display-font mt-3 text-2xl">Saved marks</h2><p className="mt-2 text-sm text-[#63736e]">Favourites are stored in local browser storage.</p></Link><div className="rounded-xl border border-[#d9ded8] bg-[#fffefa] p-5"><ShieldCheck size={18} className="text-[#176b67]" /><h2 className="display-font mt-3 text-2xl">Privacy status</h2><p className="mt-2 text-sm leading-5 text-[#63736e]">The local logbook and favourites do not leave this browser. Avoid shared devices for sensitive notes.</p></div></div></div>;
+}

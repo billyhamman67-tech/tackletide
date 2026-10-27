@@ -1,0 +1,5 @@
+import Link from "next/link";
+
+export default function RigShopPage() {
+  return <div className="mx-auto max-w-5xl px-4 py-8 md:px-8 md:py-12"><p className="text-[11px] font-semibold uppercase tracking-[.14em] text-[#74837e]">Ready-made rigs</p><h1 className="display-font mt-1 text-4xl">Where to buy a finished rig</h1><p className="mt-3 max-w-2xl text-sm leading-6 text-[#63736e]">No retailer feed or verified product links are configured, so this directory contains no purchasable listings or prices.</p><section className="mt-6 rounded-xl border border-[#d9ded8] bg-[#fffefa] p-6"><h2 className="display-font text-2xl">DIY rig instructions</h2><p className="mt-2 text-sm leading-6 text-[#63736e]">Browse the starter rig guide for component lists, assembly steps and a printable build checklist.</p><Link href="/rigs" className="mt-4 inline-flex min-h-10 items-center rounded-lg bg-[#176b67] px-4 text-sm font-semibold text-white">Open rig library</Link></section></div>;
+}

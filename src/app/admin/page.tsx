@@ -1,0 +1,5 @@
+import { ShieldAlert } from "lucide-react";
+
+export default function AdminPage() {
+  return <div className="mx-auto max-w-4xl px-4 py-8 md:px-8 md:py-12"><p className="text-[11px] font-semibold uppercase tracking-[.14em] text-[#74837e]">Content management</p><h1 className="display-font mt-1 text-4xl">Admin dashboard</h1><div className="mt-6 flex gap-3 rounded-xl border border-[#d4c9ac] bg-[#f3eddd] p-5"><ShieldAlert size={20} className="mt-0.5 shrink-0 text-[#826c3f]" /><div><h2 className="font-semibold text-[#4d482f]">Administration is not enabled</h2><p className="mt-2 text-sm leading-6 text-[#69624a]">No admin actions are exposed. Production content management requires authenticated server-side role checks, audit history, and database row-level security; these are not configured in this MVP.</p></div></div></div>;
+}
